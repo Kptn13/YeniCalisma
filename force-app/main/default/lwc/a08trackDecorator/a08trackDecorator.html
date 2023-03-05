@@ -1,0 +1,25 @@
+<template>
+  <lightning-card title="REACTIVE">
+      <lightning-input 
+      type="text" 
+      label="Adinizi Giriniz???"
+      value={ad}
+      onblur={handleAd}>
+    
+    </lightning-input>
+
+    <lightning-input 
+    type="number" 
+    label="Yasinizi Giriniz???"
+    value={soyad}
+    onblur={handleYas}></lightning-input>
+
+  <h1>AD : {ad}</h1>
+  <h1>SOYAD: {soyad}</h1>
+
+  <h1>AILE BIREY NAME : {aileBireyi.name}</h1>
+  <h1>AILE BIREY YAS: {aileBireyi.yas}</h1>
+
+  </lightning-card>
+    
+</template>

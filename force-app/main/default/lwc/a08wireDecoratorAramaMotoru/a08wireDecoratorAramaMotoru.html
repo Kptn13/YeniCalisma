@@ -1,0 +1,21 @@
+<template>
+  <lightning-card title="List icin @wire ARAMA MOTRORU uygulamasi">
+<lightning-input
+type="text"
+label="Account Ismi giriniz"
+placeholder="Account ismi buraya PLACE HOLDER"
+onchange={handleInput}></lightning-input>
+      <template for:each={butunAccountlar.data} for:item="acc" >
+          <ol key={acc.Id}>
+                  <li >
+                      <p>  Account adi ::  {acc.Name}      </p>
+                  
+            
+                  </li>
+            <br>
+         </ol> 
+        </template>
+  
+  
+  </lightning-card>
+  </template>

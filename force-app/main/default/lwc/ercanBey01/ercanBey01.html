@@ -1,0 +1,41 @@
+<template>
+  <lightning-card title="Inputs">
+  <div class="slds-grid slds-gutters">
+      <div class="slds-col">
+        <span><lightning-input type="text"
+          label="Name"
+          placeholder="Enter your name"
+          onchange={nameHandler}>
+          </lightning-input></span>
+      </div>
+      <div class="slds-col">
+        <span> <lightning-input type="text"
+          label="LastName"
+          placeholder="Enter your last name"
+          onchange={lastnameHandler}>
+          </lightning-input> </span>
+      </div>
+      <div class="slds-col">
+        <span><lightning-input type="number"
+          label="Age"
+          placeholder="Enter your age"
+          onchange={ageHandler}>
+          </lightning-input> </span>
+      </div>
+    </div>
+  </lightning-card>
+  <lightning-input type="checkbox"
+                   label="Flag"
+                   onchange={flagHandler}>
+  </lightning-input>
+  <template if:true={flag}>
+      <lightning-card title="reverse">
+      <h1>{screen}</h1>
+  </lightning-card>
+  </template>
+  <template if:false={flag}>
+      <lightning-card label="straight">
+          <h1>{name}-{lastName}-{age} </h1>
+          </lightning-card>
+  </template>
+</template>

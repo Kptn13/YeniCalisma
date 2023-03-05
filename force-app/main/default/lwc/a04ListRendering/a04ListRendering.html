@@ -1,0 +1,17 @@
+<template>
+  <lightning-card title="List Rendering (for:each)">
+  <p> direkt listeyi getirdik </p>
+  <h1> {sehirListesi} </h1>
+  <br><br>
+  <p>for each loop ile ekrana yazdirdik</p>
+     <template for:each={sehirListesi} for:item="tekSehir" >
+        <p key={tekSehir} >  sehrin adi ::  {tekSehir}   </p>
+      </template>
+  </lightning-card>
+  <lightning-card title="List Rendering (ITERATOR)">
+      <p>ITERATOR loop ile ekrana yazdirdik</p>
+     <template iterator:it={sehirListesi}  >
+        <p key={it.value} >  sehrin adi ::  {it.value}   </p>
+      </template>
+  </lightning-card>
+  </template>

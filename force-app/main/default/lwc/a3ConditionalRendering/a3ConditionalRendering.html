@@ -1,0 +1,20 @@
+<template>
+
+  <lightning-card title="Conditional Rendering">
+    <lightning-input type="checkbox" 
+     label="FLAG Control" 
+     name="input1"
+     checked={flag}
+     onchange={handleFlag}>
+
+    </lightning-input>
+    <template if:true={flag}>
+       <h1> FLAG true oldugu icin bu yazi gorunecek  </h1>
+    </template>
+   </lightning-card>
+
+   <template if:false={flag}>
+    <h1> FLAG false oldugu icin bu yazi gorunecek  </h1>
+ </template>
+    
+</template>

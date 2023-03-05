@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State__c</fullName>
+    <externalId>false</externalId>
+    <label>State</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Country__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WA :Washington</fullName>
+                <default>false</default>
+                <label>WA :Washington</label>
+            </value>
+            <value>
+                <fullName>ON|Ontario</fullName>
+                <default>false</default>
+                <label>ON|Ontario</label>
+            </value>
+            <value>
+                <fullName>Berlin</fullName>
+                <default>false</default>
+                <label>Berlin</label>
+            </value>
+            <value>
+                <fullName>England</fullName>
+                <default>false</default>
+                <label>England</label>
+            </value>
+            <value>
+                <fullName>Turkey</fullName>
+                <default>false</default>
+                <label>Turkey</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>United States of America</controllingFieldValue>
+            <valueName>WA :Washington</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>ON|Ontario</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <valueName>Berlin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United kingdom</controllingFieldValue>
+            <valueName>England</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey</controllingFieldValue>
+            <valueName>Turkey</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<template>
+  <lightning-card title="get ve set methodlari uygulamasi">
+    <lightning-input 
+    type="number"
+    min="0"
+    label="lutfen yasinizi girniz"
+    placeholder="lutfen yasinizi giriniz"
+    onchange={handleYas}></lightning-input>
+   
+<c-a092get-set-child  dogum-yili={girilenYas}  >
+</c-a092get-set-child>
+  </lightning-card>  
+<br>
+<h1>********************************</h1>
+<br>
+
+<lightning-card title=" Parenttan Childa Get ve Set ile Object tasinmasi">
+<c-a093get-set-child-object  customer= {customerDetail}>
+</c-a093get-set-child-object>
+</lightning-card>
+</template>

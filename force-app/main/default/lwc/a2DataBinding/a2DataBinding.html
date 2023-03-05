@@ -1,0 +1,47 @@
+<template>
+  <lightning-card title="Data Binding (tek yonlu)">
+    <h1>benim adim { isim }</h1>
+  </lightning-card>
+  <lightning-card title="Data Binding (cift yonlu)">
+    <lightning-input 
+    type="text" 
+    label="Adinizi Giriniz???"
+    onblur={handleInput}>
+  
+  </lightning-input>
+
+    <h1>Benim adim  {ad}</h1>
+
+
+  </lightning-card>
+ 
+  <lightning-card title="Data Binding (Manipule)">
+    <lightning-input 
+    type="text" 
+    label="Soyadinizi Giriniz"
+    onchange={handleOnChange}>
+  
+  </lightning-input>
+
+    <h1>Benim soyadim  {IsmiBuyukHarfeCevir}</h1>
+
+
+  </lightning-card>
+
+  <lightning-card title="Data Binding ( TAM isim ornegi)">
+    <lightning-input
+     type="text"
+     label="Isminizi giriniz"
+     onblur={handleIsim} ></lightning-input>
+
+     <lightning-input
+     type="text"
+     label="Soyisminizi giriniz"
+     onchange={handleSoyIsim}></lightning-input>
+
+    <p>Benim tam ismim {tamIsim}</p>
+      </lightning-card>
+
+
+    
+</template>

@@ -1,0 +1,31 @@
+<template>
+  <lightning-card title="GETTER methodu">
+    <div>
+      <h1> matematik {sayi1} ve {sayi2} nin ortalamasi {ortalama}   </h1>
+      <h1> GETTER METHODU {sayi1} ve {sayi2} nin ortalamasi {sayilarinOrtalamasi}   </h1>
+      <h1>GETTER METODU ile 3 ve 9 un carpimi {sayilarincarpimi}</h1>
+
+    </div>
+<h1> matematik {sayi1} ve {sayi2} nin ortalamasi {ortalama}   </h1>
+<h1> GETTER METHODU {sayi1} ve {sayi2} nin ortalamasi {sayilarinOrtalamasi}   </h1>
+<h1>GETTER METODU ile 3 ve 9 un carpimi {sayilarincarpimi}</h1>
+<br> <br>
+<h1> ******   ARRAY DEN eleman cagirma</h1>
+<br>
+<h1>isimler listesinin {istekIsim}     </h1>
+<h1>GETTER ile isimler listesinin {istekIsimGet}     </h1>
+<br> <br>
+<h1> ****** kullanicindan rakam isteyip  ARRAY DEN eleman cagirma </h1>
+<div title="INPUT">
+  <lightning-input
+ type="number"
+ min="0"
+ placeholder="lutfen bir sayi giriniz"
+ onblur={handleIndex}></lightning-input>
+
+</div>
+
+<h1>isimler listesinin {kullaniciIstekIsim}     </h1>
+<h1>GETTER ile isimler listesinin {kullaniciIstekIsimGet}   </h1>
+  </lightning-card>
+</template>

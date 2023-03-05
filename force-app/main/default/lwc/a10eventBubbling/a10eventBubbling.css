@@ -1,0 +1,27 @@
+.disDiv{
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    }
+  .ortaDiv{
+    background-color:chartreuse;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    }
+  .icDiv{
+    background-color:coral;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+   }
+   .Armut{
+    color: blue;
+    background-color: brown;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    
+
+   }

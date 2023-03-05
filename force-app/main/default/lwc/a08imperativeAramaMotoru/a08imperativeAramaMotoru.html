@@ -1,0 +1,25 @@
+<template>
+  <lightning-card title="Imperative Yontem">
+<lightning-input
+type="text"
+label="Account Ismi giriniz"
+placeholder="Account ismi buraya PLACE HOLDER"
+onchange={handleInput}></lightning-input>
+
+<lightning-button 
+  variant="brand" 
+  label="Account Bul" 
+  onclick={handleClick} 
+  class="slds-m-left_x-small"></lightning-button>
+      <template for:each={accountListesi} for:item="acc" >
+          <ol key={acc.Id}>
+                  <li >
+                      <p>  Account adi ::  {acc.Name} </p>
+                  </li>
+            <br>
+         </ol> 
+        </template>
+        
+  
+  </lightning-card>
+  </template>

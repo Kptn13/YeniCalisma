@@ -1,0 +1,31 @@
+<template>
+  <lightning-card title="ARABA">
+    <div class="slds-grid slds-wrap">
+      <div class="slds-col slds-size_4-of-12 slds-border_right">
+        <h1>Araba Markasi:: {arabaMarkasi}</h1>
+    <lightning-input 
+    type="text" 
+    label="Yakit Turu Giriniz"
+    onblur={handleYakitTuru}></lightning-input>
+      </div>
+      <div class="slds-col slds-size_4-of-12 slds-border_right">
+        <lightning-input 
+        type="text" 
+        label="Motor Gucu Giriniz"
+        onblur={handleMotorGucu}></lightning-input>
+      </div>
+      <div class="slds-col slds-size_4-of-12 slds-border_right">
+        
+        <c-a06-motor-hakkinda
+    motor-cinsi='hybrit'
+    yakit-turu-parent={yakitTuruDede}
+    motor-gucu-baba={motorGucuDede}
+    
+    ></c-a06-motor-hakkinda>
+
+    </div>
+  </div>
+
+  </lightning-card>
+    
+</template>

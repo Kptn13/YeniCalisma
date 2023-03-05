@@ -1,0 +1,25 @@
+<template>
+
+  <lightning-card title="REACTIVE">
+
+    <lightning-input 
+    type="text" 
+    label="enter name"
+    onchange = {handleIsim}
+    placeholder="Your Name"></lightning-input>
+
+    <lightning-input 
+    type="text" 
+    label="enter age"
+    onchange = {handleYas}
+    placeholder="Your Yas"></lightning-input>
+  
+   <h1>My name is {name} , surname is {surname}</h1>
+
+    <h1>My name is {aileBireyi.isim} , age is {aileBireyi.yas}</h1>
+
+  
+
+  </lightning-card>
+    
+</template>

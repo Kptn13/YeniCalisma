@@ -1,0 +1,22 @@
+<template>
+  <lightning-card title="YENİ ACCOUNT OLUSTURMA COMPONENTI">
+      <lightning-input
+          type="text"
+          label="Account İsmi Giriniz"
+          placeholder="Account ismi buraya PLACE HOLDER"
+          onchange={handleInput}
+      ></lightning-input>
+      <lightning-input
+          type="text"
+          label="Phone No Giriniz"
+          placeholder="Phone No buraya PLACE HOLDER"
+          onchange={handleInputPhone}
+      ></lightning-input>
+      <lightning-button
+          variant="success"
+          label="Account OLUŞTUR"
+          onclick={handleClick}
+          class="slds-m-left_x-small"
+      ></lightning-button>
+  </lightning-card>
+</template>

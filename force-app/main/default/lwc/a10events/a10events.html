@@ -1,0 +1,27 @@
+<template>
+      <lightning-card title="bir event" >
+        <div style="width: 400px;;
+    height:100px;
+    border:2px solid black">
+  
+        <lightning-input
+        type="text"
+        label="bir isim giriniz"
+        placeholder="lutfen ismi buraya giriniz"
+        onchange={handleIsim} ></lightning-input>
+        <br>
+        <h1>bu ismi siz girdiniz {isim}</h1>
+      </div>
+      </lightning-card>
+      <h1>*********** -------- *******</h1>
+      <lightning-card title="Mouse koordinat takibi">
+
+    <div style="width: 400px;
+    height:100px;
+    border:2px solid black"
+    onmousemove={handleMove} >
+    </div>
+    <h1>  x Koordinati => {xCoordinate}</h1>
+    <h1>  y Koordinati => {yCoordinate}  </h1>
+      </lightning-card>
+    </template>

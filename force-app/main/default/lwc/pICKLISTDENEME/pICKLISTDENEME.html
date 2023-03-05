@@ -1,0 +1,57 @@
+<template>
+
+    <lightning-card title="PICKLIST DENEME">
+      <div class="slds-grid slds-gutters">
+        <div class="slds-col">
+          <lightning-combobox   name ='araba'
+          label="istediginiz Araba Markasi"
+          options={secenekler}
+          value={secilen}
+          onchange={handlePicklist}>
+       </lightning-combobox>
+         <h1> secilen deger {secilen}</h1>
+    <lightning-combobox 
+ name='Motor Hakkinda'
+ label="Motor Cesitleri"
+ options={secenekler2}
+ value={secilen2}
+ onchange={handelePicklist2} >
+
+</lightning-combobox>
+<h1> secilen deger {secilen2}</h1>
+
+
+
+
+
+        </div>
+        <div class="slds-col">
+          <lightning-combobox 
+          name='Motor Hakkinda'
+          label="Motor Cesitleri"
+          options={secenekler2}
+          value={secilen2}
+          onchange={handelePicklist2} >
+
+        </lightning-combobox>
+        <h1> secilen deger {secilen2}</h1>
+        </div>
+
+        <div class="slds-col">
+          <lightning-combobox 
+          name='Motor Ozellikleri'
+          label="Motor Ozellikleri"
+          options={secenekler3}
+          value={secilen3}
+          onchange={handelePicklist3} >
+
+        </lightning-combobox>
+        <h1> secilen deger {secilen3}</h1>
+
+        </div>
+      </div>
+
+    </lightning-card>  
+  <!--  youtube link https://www.youtube.com/watch?v=jjjL5GNIR8g  --> 
+
+</template>

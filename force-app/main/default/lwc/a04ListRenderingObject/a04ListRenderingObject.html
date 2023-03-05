@@ -1,0 +1,14 @@
+<template>
+  <lightning-card title="Object icin for:each loop">
+      <template for:each={cicekListesi} for:item="cicek" >
+          <ol key={cicek.id}>
+                  <li >
+                      <p>  Cicek adi ::  {cicek.name}      </p>
+                      <p>   FAMILYA ::  {cicek.familya}    </p>
+                      <img src={cicek.imgUrl}  alt="cicek" width="200" height="250">
+                  </li>
+                  <br>
+         </ol>
+        </template>
+  </lightning-card>
+  </template>

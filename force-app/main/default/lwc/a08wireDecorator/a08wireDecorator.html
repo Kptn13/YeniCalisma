@@ -1,0 +1,23 @@
+<template>
+
+  <lightning-card title=" Contact List From Apex - @wire uygulamasi">
+    <div class="slds-m-around_medium">
+    <template if:true={butunContactlar.data}>
+    <template for:each={butunContactlar.data} for:item="con">
+      <ol key={con.Id}>
+        <li>
+          <p>Contac Name :: {con.Name}</p>
+          <p>Contact Phone :: {con.Phone}</p>
+          <br>
+        </li>
+      </ol>
+    </template>
+    <template if:true={butunContactlar.error}>
+      {accounts.error}
+    </template>
+  </template>
+  </div>
+
+  </lightning-card>
+  
+</template>

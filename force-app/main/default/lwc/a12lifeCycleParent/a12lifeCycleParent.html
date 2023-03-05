@@ -1,0 +1,28 @@
+<template>
+    
+  <lightning-card title="LifeCycle">
+  <h1>PARENT dan geliyor 2</h1>
+  <lightning-input type="text" 
+      label='isim girin'  
+      onchange={handleChange}></lightning-input>
+  <br>
+  <h1> constructor veya connecttedcallback ile alakali kizim</h1>
+      <template for:each={contactList} for:item="cnt">
+          <p key={cnt.Id}> {cnt.Name}</p>
+      </template>
+  <br> <br>
+  <h1>renderedCallback ile alakali kisim</h1>
+  <br><br>
+  <h1>SAYI :: {sayi}</h1>
+  <h1>constructordan geliyor {isim}</h1>
+  <br><br>
+  <h1>disconnectedCallback (child) ile alakali kisim</h1>
+  <template if:true={gorunsunmu}>
+      <c-a12life-cycle-child>
+      </c-a12life-cycle-child>
+  </template>
+  <lightning-button label="GOSTER" variant="success" onclick={handleGoster}></lightning-button>
+  <lightning-button label="GIZLE" variant="destructive" onclick={handleGizle}></lightning-button>
+  </lightning-card>
+  </template>
+  <!-- connectedCallback() -->

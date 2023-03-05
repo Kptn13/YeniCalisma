@@ -1,0 +1,11 @@
+h1{
+  color:red;
+}
+p{
+  color:blue;
+}
+c-a05child-component{
+  color:aqua;
+  --parentdanRenkDegistir: red;
+  --backgrounddegistir: rgb(99, 42, 165);
+}

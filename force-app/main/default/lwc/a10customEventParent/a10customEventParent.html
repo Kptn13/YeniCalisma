@@ -1,0 +1,31 @@
+<template>
+  <lightning-card title="CUSTOM EVENT">
+
+    <c-a10custom-event-child-bir  
+    onelma={handleElma}>
+    </c-a10custom-event-child-bir>  
+
+<p> bu bilgiyi child degistirdi {yeniBilgi}</p>
+  </lightning-card>
+
+<h1>**************************************</h1>
+  <lightning-card title="CUSTOM EVENT data gonder">
+      <c-a10custom-event-child-iki  
+      onarmut={handleArmut}>
+
+      </c-a10custom-event-child-iki>  
+
+<p> bu MUSTERIYI child GONDERDI {childVeri}</p>
+</lightning-card>
+<h1>**************************************</h1>
+  <lightning-card title="CUSTOM EVENT OBJECT gonder">
+      <c-a10custom-event-child-uc  
+      onayva={handleAyva}>
+
+      </c-a10custom-event-child-uc>  
+
+<p> bu musteriyi child GONDERDI {musteri.name}</p>
+<p> bu musteriyi child GONDERDI {musteri.yas}</p>
+
+    </lightning-card>
+</template>

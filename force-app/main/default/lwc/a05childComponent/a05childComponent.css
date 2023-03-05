@@ -1,0 +1,10 @@
+h1{
+  color: rgb(7, 11, 238);
+}
+.guzel{
+  /*color:blueviolet; */
+  color: var(--parentdanRenkDegistir, black);;
+  background-color: var(--backgrounddegistir, yellow) ;;
+  font-style: italic;
+  display: inline-block;
+}
